@@ -1,0 +1,258 @@
+/* Reset default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #106eea;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: black;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.dropdown-menu li {
+    padding: 8px 15px;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: white;
+    padding: 8px 12px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #106eea;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Cookie Banner */
+.cookie-banner {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.cookie-banner button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: #106eea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cookie-banner button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Navbar */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: abso
+    }}
+
+
+
+
+    /* Footer Styling */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #106eea;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #106eea;
+}
+
+/* Contact Info */
+.footer-section p {
+    margin: 10px 0;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;  /* Adjust icon size */
+    height: 40px;
+    transition: 0.3s;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;  /* Optional: Make icons circular */
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+    opacity: 0.8;
+}
+
+
+/* Newsletter Subscription */
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-section button {
+    background-color: #106eea;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.footer-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Copyright */
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}

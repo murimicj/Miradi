@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Cookie Tracking</title>
+    <link rel="stylesheet" href="css/home.css"> <!-- Linking External CSS -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo.jpg" alt="Brand Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="trackClick('Home')">Home</a></li>
+            <li><a href="#" onclick="trackClick('About')">About</a></li>
+
+            <!-- Project Management Dropdown -->
+            <li class="dropdown">
+                <a href="#" onclick="trackClick('Project Management')">Project Management ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="trackClick('Apartment')">Apartment</a></li>
+                    <li><a href="#" onclick="trackClick('Rental')">Rental</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" onclick="trackClick('Investments')">Investments</a></li>
+
+            <!-- Agriculture Dropdown -->
+            <li class="dropdown">
+                <a href="#" onclick="trackClick('Agriculture')">Agriculture ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="trackClick('Biogas')">Biogas</a></li>
+                    <li><a href="#" onclick="trackClick('Animal Housing')">Animal Housing</a></li>
+                    <li><a href="#" onclick="trackClick('Farm Management')">Farm Management</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>This website uses cookies to improve user experience. Do you accept?</p>
+        <button onclick="acceptCookies()">Accept</button>
+    </div>
+
+    <!-- home -->
+    <div class="hero-section">
+        <div class="carousel">
+            <img src="assets/hero photo.webp" alt="Image 1">
+            <img src="assets/hero2.webp" alt="Image 2">
+            <img src="assets/hero3.webp" alt="Image 3">
+        </div>
+        <div class="hero-overlay">
+            <h1>Kazi safi na Miradii...</h1>
+            <p>Efficient work, exceptional designs.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </div>
+
+
+    <script src="script/home.js"></script>
+
+    <br><br><br><br><br>
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="footer-container">
+    
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Project Management</a></li>
+                    <li><a href="#">Investments</a></li>
+                    <li><a href="#">Agriculture</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact -->
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><strong>Email:</strong> support@yourwebsite.com</p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Address:</strong> 123 Innovation St, Tech City</p>
+            </div>
+    
+            <!-- Social Media -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            
+            <!-- Newsletter Signup -->
+            <div class="footer-section">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+    
+        </div>
+    
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>© 2025 Your Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+    
+
+</body>
+</html>
