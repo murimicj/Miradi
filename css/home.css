@@ -21,6 +21,9 @@
     opacity: 0.7;
 }
 
+
+
+
 /* Logo Styling */
 .logo img {
     height: 50px;
@@ -208,6 +211,137 @@
             font-size: 1rem;
         }
     }
+
+
+    /* Main Section */
+.info-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Full-Width Image */
+.info-section img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    opacity: 0.8; /* Slight transparency for effect */
+}
+
+/* Overlay Content */
+.info-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7); /* Black overlay */
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Title */
+.info-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: wheat; /* Blue accent */
+}
+
+/* Description */
+.info-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ccc; /* Light gray text */
+}
+
+/* Call-to-Action Button */
+.info-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: black; /* Blue Button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.info-content .btn:hover {
+    background: #0d5bc1; /* Darker Blue on Hover */
+}
+
+
+
+/* building */
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Construction Section */
+.construction-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Full-Width Image */
+.construction-section img {
+    width: 100%;
+    height: 450px;
+    display: block;
+    opacity: 0.9;
+}
+
+/* Overlay Content */
+.construction-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7); /* Black overlay */
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Title */
+.construction-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: wheat; /* Blue accent */
+}
+
+/* Description */
+.construction-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ddd; /* Light gray text */
+}
+
+/* Call-to-Action Button */
+.construction-content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: black; /* Blue Button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.construction-content .btn:hover {
+    background: #0d5bc1; /* Darker Blue on Hover */
+}
     
 
 
@@ -240,7 +374,7 @@
 .footer-section h3 {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #106eea;
+    color: wheat;
 }
 
 .footer-section ul {

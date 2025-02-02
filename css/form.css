@@ -1,0 +1,78 @@
+/* Contact Form Container */
+.contact-container {
+    width: 90%;
+    max-width: 600px;
+    background: #f9f9f9;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form Title & Text */
+.contact-container h2 {
+    color: #106eea;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Input & Textarea Hover/Focus */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #106eea;
+    outline: none;
+    box-shadow: 0 0 5px rgba(16, 110, 234, 0.3);
+}
+
+/* Submit Button */
+.btn-submit {
+    background: #106eea;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+    background: #0a58ca;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 95%;
+        padding: 20px;
+    }
+}
