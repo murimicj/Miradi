@@ -8,38 +8,42 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="assets/logo.jpg" alt="Brand Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="#" onclick="trackClick('Home')">Home</a></li>
-            <li><a href="#" onclick="trackClick('About')">About</a></li>
+   <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="assets/logo.jpg" alt="Brand Logo">
+    </div>
+    
+    <!-- Hamburger Menu Button -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-            <!-- Project Management Dropdown -->
-            <li class="dropdown">
-                <a href="#" onclick="trackClick('Project Management')">Project Management ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#" onclick="trackClick('Apartment')">Apartment</a></li>
-                    <li><a href="#" onclick="trackClick('Rental')">Rental</a></li>
-                </ul>
-            </li>
+    <ul class="nav-links">
+        <li><a href="#" onclick="trackClick('Home')">Home</a></li>
+        <li><a href="#" onclick="trackClick('About')">About</a></li>
 
-            <li><a href="#" onclick="trackClick('Investments')">Investments</a></li>
+        <!-- Project Management Dropdown -->
+        <li class="dropdown">
+            <a href="#" onclick="trackClick('Project Management')">Project Management ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="#" onclick="trackClick('Apartment')">Apartment</a></li>
+                <li><a href="#" onclick="trackClick('Rental')">Rental</a></li>
+            </ul>
+        </li>
 
-            <!-- Agriculture Dropdown -->
-            <li class="dropdown">
-                <a href="#" onclick="trackClick('Agriculture')">Agriculture ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#" onclick="trackClick('Biogas')">Biogas</a></li>
-                    <li><a href="#" onclick="trackClick('Animal Housing')">Animal Housing</a></li>
-                    <li><a href="#" onclick="trackClick('Farm Management')">Farm Management</a></li>
-                </ul>
-            </li>
-        </ul>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    </nav>
+        <li><a href="#" onclick="trackClick('Investments')">Investments</a></li>
+
+        <!-- Agriculture Dropdown -->
+        <li class="dropdown">
+            <a href="#" onclick="trackClick('Agriculture')">Agriculture ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="#" onclick="trackClick('Biogas')">Biogas</a></li>
+                <li><a href="#" onclick="trackClick('Animal Housing')">Animal Housing</a></li>
+                <li><a href="#" onclick="trackClick('Farm Management')">Farm Management</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
 
     <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
@@ -49,22 +53,37 @@
 
     <!-- home -->
     <div class="hero-section">
-        <div class="carousel">
-            <img src="assets/hero photo.webp" alt="Image 1">
-            <img src="assets/hero2.webp" alt="Image 2">
-            <img src="assets/hero3.webp" alt="Image 3">
-        </div>
+        <!-- <div class="carousel-container"> -->
+            <!-- <div class="carousel"> -->
+                <img src="assets/807A0754.jpg" alt="Image 1">
+                <!-- <img src="assets/807A0764.jpg" alt="Image 2">
+                <img src="assets/807A0768.jpg" alt="Image 3"> -->
+            <!-- </div> -->
+            <!-- <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="next-btn" onclick="nextSlide()">&#10095;</button> -->
+        <!-- </div> -->
+     </div>
+    
         <div class="hero-overlay">
             <h1>Kazi safi na Miradii...</h1>
             <p>Efficient work, exceptional designs.</p>
             <a href="#" class="btn">Get Started</a>
-        </div>
-    </div>
+        </div></div></div>
+    
     <br><br>
 
+    <div class="miradii-section">
+        <img src="assets/Miradii.jpg" alt="Miradii Image">
+        <div class="miradii-text">
+            <h2>Why Miradi?</h2><br><br>
+            <p>Miradii is committed to delivering innovative solutions that enhance user experiences, ensuring efficiency and quality in every aspect. Our approach integrates modern technology with a customer-first mindset.</p><br><br><br><br>
+            <a href="#" class="miradii-button">Learn More</a>
+        </div>
+    </div><br><br>
+    
     <!-- Agriculture -->
     <div class="info-section">
-        <img src="assets/cows.webp" alt="Animal Housing & Biogas">
+        <img src="assets/cowshed.jpg" alt="Animal Housing & Biogas">
         <div class="info-content">
             <h2>Why You Need Animal Housing & Biogas</h2>
             <p>Animal housing ensures better livestock management, while biogas provides a sustainable energy source, reducing costs and environmental impact.</p>
@@ -74,9 +93,22 @@
 
     <br><br>
 
+    <div class="reliability-section">
+        <div class="reliability-text">
+            <h2>Isn’t reliability what you need?</h2><br><br>
+            <p>At Miradii, we lead the way in procurement, ensuring seamless sourcing of quality materials. Our advanced project tracking system keeps you updated in real time, eliminating delays. On the ground, our experienced team executes with precision, turning plans into reality. Reliability isn’t just a promise—it’s how we operate.</p>
+           
+            <br><br><br>
+            <a href="#" class="reliability-btn">Get Started</a>
+      
+        </div>
+        <img src="assets/shed.jpg" alt="Project Reliability">
+    </div>
+    
+<br><br>
     <!-- building and construction -->
     <div class="construction-section">
-        <img src="assets/building.webp" alt="Building & Construction">
+        <img src="assets/construction.jpg" alt="Building & Construction">
         <div class="construction-content">
             <h2>Reliable Building & Construction Services</h2>
             <p>We offer top-quality, fast, and durable construction services. From residential to commercial projects, our expert contractors ensure precision and excellence in every build.</p>
@@ -147,6 +179,6 @@
     <!-- FontAwesome Icons -->
     <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
     
-
+    
 </body>
 </html>

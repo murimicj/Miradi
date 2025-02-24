@@ -63,20 +63,17 @@ window.onload = function() {
     }
 };
 
-// Responsive Menu Toggle
 function toggleMenu() {
-    document.querySelector('.nav-links').classList.toggle('active');
+    document.querySelector(".nav-links").classList.toggle("active");
 }
 
-let currentIndex = 0;
-const images = document.querySelectorAll('.carousel img');
-const totalImages = images.length;
+// Mobile Dropdown Functionality
+document.querySelectorAll(".dropdown > a").forEach((dropdown) => {
+    dropdown.addEventListener("click", function (event) {
+        event.preventDefault();
+        this.parentElement.classList.toggle("active");
+    });
+});
 
-function changeImage() {
-    currentIndex = (currentIndex + 1) % totalImages;
-    document.querySelector('.carousel').style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-setInterval(changeImage, 3000); // Change image every 3 seconds
 
 
