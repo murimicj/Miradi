@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar with Cookie Tracking</title>
+    <title>Welcome to Miradi</title>
+    <link rel="icon" href="assets/home.png">
     <link rel="stylesheet" href="css/home.css"> <!-- Linking External CSS -->
 </head>
 <body>
@@ -11,33 +12,33 @@
    <!-- Navbar -->
 <nav class="navbar">
     <div class="logo">
-        <img src="assets/logo.jpg" alt="Brand Logo">
+      <a href="#home"><img src="assets/logo.jpg" alt="Brand Logo"></a>  
     </div>
     
     <!-- Hamburger Menu Button -->
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
     <ul class="nav-links">
-        <li><a href="#" onclick="trackClick('Home')">Home</a></li>
-        <li><a href="#" onclick="trackClick('About')">About</a></li>
+        <!-- <li><a href="#" onclick="trackClick('Home')">Home</a></li> -->
+        <!-- <li><a href="#" onclick="trackClick('About')">About</a></li> -->
 
         <!-- Project Management Dropdown -->
         <li class="dropdown">
             <a href="#" onclick="trackClick('Project Management')">Project Management ▾</a>
             <ul class="dropdown-menu">
-                <li><a href="#" onclick="trackClick('Apartment')">Apartment</a></li>
+                <li><a href="#apartment" onclick="trackClick('Apartment')">Apartment</a></li>
                 <li><a href="#" onclick="trackClick('Rental')">Rental</a></li>
             </ul>
         </li>
 
-        <li><a href="#" onclick="trackClick('Investments')">Investments</a></li>
+        <li><a href="#investment" onclick="trackClick('Investments')">Investments</a></li>
 
         <!-- Agriculture Dropdown -->
         <li class="dropdown">
             <a href="#" onclick="trackClick('Agriculture')">Agriculture ▾</a>
             <ul class="dropdown-menu">
-                <li><a href="#" onclick="trackClick('Biogas')">Biogas</a></li>
-                <li><a href="#" onclick="trackClick('Animal Housing')">Animal Housing</a></li>
+                <li><a href="#agriculture" onclick="trackClick('Biogas')">Biogas & Animal Housing</a></li>
+                <!-- <li><a href="#" onclick="trackClick('Animal Housing')">Animal Housing</a></li> -->
                 <li><a href="#" onclick="trackClick('Farm Management')">Farm Management</a></li>
             </ul>
         </li>
@@ -52,7 +53,8 @@
     </div>
 
     <!-- home -->
-    <div class="hero-section">
+     <section id="home">
+        <div class="hero-section">
         <!-- <div class="carousel-container"> -->
             <!-- <div class="carousel"> -->
                 <img src="assets/807A0754.jpg" alt="Image 1">
@@ -69,28 +71,30 @@
             <p>Efficient work, exceptional designs.</p>
             <a href="#" class="btn">Get Started</a>
         </div></div></div>
-    
+     </section>
     <br><br>
-
-    <div class="miradii-section">
+   <section id="investment">
+     <div class="miradii-section">
         <img src="assets/Miradii.jpg" alt="Miradii Image">
         <div class="miradii-text">
             <h2>Why Miradi?</h2><br><br>
             <p>Miradii is committed to delivering innovative solutions that enhance user experiences, ensuring efficiency and quality in every aspect. Our approach integrates modern technology with a customer-first mindset.</p><br><br><br><br>
             <a href="#" class="miradii-button">Learn More</a>
         </div>
-    </div><br><br>
+     </div>
+     </section><br><br>
     
     <!-- Agriculture -->
-    <div class="info-section">
-        <img src="assets/cowshed.jpg" alt="Animal Housing & Biogas">
-        <div class="info-content">
-            <h2>Why You Need Animal Housing & Biogas</h2>
-            <p>Animal housing ensures better livestock management, while biogas provides a sustainable energy source, reducing costs and environmental impact.</p>
-            <a href="#" class="btn">Get Started</a>
+     <section id="agriculture">
+        <div class="info-section">
+             <img src="assets/cowshed.jpg" alt="Animal Housing & Biogas">
+            <div class="info-content">
+                 <h2>Why You Need Animal Housing & Biogas</h2>
+                    <p>Animal housing ensures better livestock management, while biogas provides a sustainable energy source, reducing costs and environmental impact.</p>
+                         <a href="#" class="btn">Get Started</a>
+             </div>
         </div>
-    </div>
-
+     </section>
     <br><br>
 
     <div class="reliability-section">
@@ -107,6 +111,7 @@
     
 <br><br>
     <!-- building and construction -->
+     <section id="apartment">
     <div class="construction-section">
         <img src="assets/construction.jpg" alt="Building & Construction">
         <div class="construction-content">
@@ -115,6 +120,7 @@
             <a href="#" class="btn">Get Started</a>
         </div>
     </div>
+     </section>
 
     <!-- carrousell 2 -->
      
@@ -132,11 +138,11 @@
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Project Management</a></li>
-                    <li><a href="#">Investments</a></li>
-                    <li><a href="#">Agriculture</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <!-- <li><a href="#">About</a></li> -->
+                    <li><a href="#building">Apartment</a></li>
+                    <li><a href="#investment">Investments</a></li>
+                    <li><a href="#agriculture">Agriculture</a></li>
                 </ul>
             </div>
     
@@ -152,10 +158,10 @@
             <div class="footer-section">
                 <h3>Follow Us</h3>
                 <div class="social-icons">
-                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-                    <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/whatsapp.png" alt="Whatsapp"></a>
+                    <!-- <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a> -->
                 </div>
             </div>
             
